@@ -1,0 +1,381 @@
+//обнуление стилей
+@import "null-style.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 20px;
+    padding: 4px 10px;
+    width: 100%;
+    color: rgb(160, 160, 160);
+}
+
+.block-padding {padding: 0 12px;}
+
+.title-block {
+    font-size: 28px;
+    font-weight: 400;
+    color: #505050;
+    margin-bottom: 30px;
+}
+//---------------------------HEADER-------------------------------------
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    a {color:rgb(160, 160, 160);}
+    a:hover {color:rgb(41, 41, 41);}
+}
+
+.header-links {
+    align-self: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+.header__link:not(:last-child) {margin: 0 20px 0 0;}
+
+.header__link_active {
+    color: rgb(41, 41, 41);
+    a {
+        color: rgb(41, 41, 41); 
+        font-weight: 500; 
+        text-decoration: underline;
+    }
+}
+//------------------------HEADER-1------------------------------------------------------------------------------------------------------------
+.header-1 {
+    background: #000000;
+    // padding: 0px 10px;
+    color:rgb(206, 206, 206);
+    font-size: 12px;
+    a {
+        color:rgb(206, 206, 206);
+    }
+    a:hover {
+        color:rgb(240, 240, 240);
+    }
+}
+
+.header-1__info {padding: 10px 0px;}
+
+.header-1__link span {text-transform: capitalize; font-style: italic;}
+
+//---------------------------HEADER-2--------------------------------------------------------------------------------------------------------------
+
+.header-2__bar_padding {padding: 30px 0px;}
+
+.header-2_logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #313131;
+}
+
+.header-2__btn:not(:last-child) {
+    margin: 0 10px 0 0;
+}
+
+//-------------------------------HEADER-3---------------------------------------------
+
+.header-3_block {
+    .header-3_search {
+        align-items: center;
+        flex: 0 1 auto;
+        font-size: 14px;
+        a {margin-left: 10px; font-size: 20px;}
+    }
+}
+
+.header-3__links {font-size: 14px;}
+.header-3_shadow {box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);}
+.header-3__bar_padding {padding: 8px 0px;}
+
+//----------------MAIN-----------------------------------------------------------------
+
+.main {
+    flex: 1 1 auto;
+}
+
+.block-content {
+    padding: 20px;
+}
+
+.category_block {
+    flex: 0 0 33,3333%;
+    margin: 2px;
+    position: relative;
+}
+
+.category_block:hover {
+    .category_link {
+        opacity: 1;
+    }
+}
+
+.category_link {
+    background: #000;
+    padding: 30px 0;
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    opacity: 0.6;
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    text-align: center;
+}
+
+//--------------------------CARDS----------------------------------------------------------------------
+
+.cards {
+    padding: 10px 0;
+}
+.card {
+    &:hover {box-shadow: 0px 0px 6px rgb(112, 112, 112);}
+    margin: 0 2px;
+    padding: 6px;
+    border: rgb(173, 173, 173) solid 1px;
+    border-radius: 6px;
+    background: rgb(239, 239, 239);
+    color:#313131;
+    ul {
+        margin-top: 12px;
+        a {color: blueviolet; font-weight: 500;}
+        a:hover {color: orangered;}
+        h3 {
+            a {color: inherit;}
+            font-size: large;
+            font-weight: 500;}
+        li {
+            margin-bottom: 10px;
+            line-height: 18px;
+        }
+        .card-btn {
+            max-height: 40px;
+            margin: 0 10px;
+            li {
+                a {color: #dddddd;}
+                text-align: center;
+                background-color: blueviolet;
+                border-radius: 4px;
+                padding: 6px 0px;
+                &:first-child {flex: 1 0 auto; margin-right: 6px; font-size: medium;}
+                &:last-child {
+                    flex: 0 0 15%;
+                    img {width: 50%;}
+                }
+                &:hover {background: orangered;}
+                
+            }
+
+        }
+    }
+}
+.card__size {
+    flex: 0 0 22%;
+}
+
+//---------------------------BRANDS----------------------------------------------------------------------
+
+.brands_content {
+   display: flex;
+}
+
+.brand_card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 4px;
+}
+
+.brand_content-sm {
+    display: none;
+}
+
+//---------------------------FOOTER----------------------------------------------------------------------
+.footer {
+    background: #dddddd;
+    color: #666666;
+    padding-top: 24px;
+}
+
+.footer-items-block {
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column:not(:last-child) {
+    padding: 0 80px 0 0;
+}
+
+.footer__column h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.footer_item {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.footer__item_size {font-size: 28px;}
+.footer__item_size:not(:last-child) {margin: 0 20px 0 0;}
+
+.footer__copyright {background-color: #f8f8f8;}
+
+.footer__text {
+    color: #666666;
+    padding: 5px;
+}
+
+// ----------------------MEDIA-QUERY---------------------------------------
+
+// @media (max-width: 425px) {
+//     .header-2__bar_padding {padding: 10px 0px;}
+//     .header-2_block {
+//         display: flex;
+//         flex-direction: column;
+//         .header-2_links {
+//             margin-bottom: 8px;
+//         }
+//         .header-2_logo {
+//             order: -1;
+//             margin-bottom: 24px;
+//         }
+//     }
+//     .header-3_block {
+//         display: flex;
+//         flex-direction: column;
+//         .header-3_links {
+//             flex-wrap: wrap;
+//             justify-content: center;
+//             li {
+//                 flex: 0 0 auto;
+//                 margin: 8px;
+//             }
+//         }
+//         .header-3_search {
+//             width: 100%;
+//         }
+//     }
+//     .category_items {
+//         display: flex;
+//         flex-direction: column;
+//         .category_img {
+//             img {
+//                 width: 14%;
+//             }
+//         }
+//         .category_link {
+//             opacity: 1;
+//             &:hover {background: orangered;}
+//         }
+//     }
+//     .cards {
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         .card {
+//             flex: 0 0 80%;
+//             margin-bottom: 10px;
+//         }
+//     }
+//     .brands_content {
+//         flex-wrap: wrap;
+//         .brand_card {
+//             flex: 0 1 80px;
+//         }
+//     }
+//     .footer_block {
+//         display: flex;
+//         flex-direction: column;
+//         .footer-items-block {
+//             flex-direction: column;
+            
+//         }
+//         .footer__items {
+//             justify-content: center;
+//             .footer_item {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 426px) and (max-width: 767px) {
+//     /* стили для xs-устройств */
+//     .cards {
+//         display: flex;
+//         flex-wrap: wrap;
+//         .card {
+//             flex: 0 0 48%;
+//         }
+//     }
+//     .brands_content {
+//         flex-wrap: wrap;
+//         .brand_card {
+//             width: 100px;
+//         }
+//     }
+// }
+
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//     /* стили для sm-устройств */
+//     .header-3_block {
+//         .header-3_links {
+//             display: flex;
+//             flex-wrap: wrap;
+//             li {
+//                 flex: 0 0 48%;
+//                 margin: 6px 0;
+//             }
+//         }
+//     }
+//     .brands_content {
+//         flex-wrap: wrap;
+//         .brand_card {
+//             width: 150px;
+//         }
+//     }
+// }
+// @media (min-width: 991px) and (max-width: 1199px) {
+//     /* стили для md-устройств */
+// }
+// @media (min-width: 1200px) {
+//     /* стили для lg-устройств */
+// }

@@ -1,0 +1,16 @@
+@media (min-width: 426px) and (max-width: 767px) {
+    /* стили для xs-устройств */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            flex: 0 0 48%;
+        }
+    }
+    .brands_content {
+        flex-wrap: wrap;
+        .brand_card {
+            width: 100px;
+        }
+    }
+}

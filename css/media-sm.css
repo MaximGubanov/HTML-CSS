@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+  .header-3_block .header-3_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-3_block .header-3_links li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    margin: 6px 0;
+  }
+
+  .brands_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .brands_content .brand_card {
+    width: 150px;
+  }
+}
